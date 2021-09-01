@@ -16,7 +16,11 @@ window.addEventListener('DOMContentLoaded', async function(){
                 // }//
                 
                 let character = (await axios.get(within)).data;
-                console.log(character.name);           
+                console.log(character.name); 
+                         
+                document.querySelector('#name').innerHTML+="<li> name: " + character.name + '</li>'
+
+                // }
             }
 
 
