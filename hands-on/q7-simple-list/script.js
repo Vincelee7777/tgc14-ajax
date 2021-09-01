@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', async function(){
                 // for(let pov of within){
                 //     let response2=await axios.get(pov);
                 //     console.log(response2);
-                // }
+                // }//
                 
                 let character = (await axios.get(within)).data;
                 console.log(character.name);           
