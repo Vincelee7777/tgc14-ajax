@@ -16,11 +16,14 @@ window.addEventListener('DOMContentLoaded', async function(){
                 // }//
                 
                 let character = (await axios.get(within)).data;
-                console.log(character.name); 
+                // console.log(character.name); 
+                let eachcharacter=[]
+                eachcharacter.push(character.name)
+                console.log(eachcharacter)
                          
-                document.querySelector('#name').innerHTML+="<li> name: " + character.name + '</li>'
+                document.querySelector('#name').innerHTML+=`<p>&nbsp&nbsp&nbsp&nbsp Character names: ${eachcharacter} </p>`
 
-                // }
+                
             }
 
 
