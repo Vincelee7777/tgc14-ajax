@@ -8,17 +8,17 @@ window.addEventListener("DOMContentLoaded", async function(){
     console.log(response.data)
     document.querySelector('#load').addEventListener('click', function(){
         
-        for(n=0;n<10;n++){
+        // for(n=0;n<10;n++){
             for(let name of response.data.results){
                 // let name=response.data.results[n]
-            // for(n=0;n<10;n++){
-            console.log(typename)
+            
+            console.log(typeof name)
                 
          document.querySelector('#content').innerHTML+=`<li>${name.name}</li>`
         
         }
 
-        }
+        
 
 
 })
