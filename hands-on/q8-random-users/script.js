@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', async function(){
             let img=random.picture.medium
             console.log(img)
 
-            document.querySelector('#pages').innerHTML+="<li> Name: "+ fn +' ' + ln +"</li>"+"<p> City :" +ln+"</p>"+ `<img src='${img}' + />`
+            document.querySelector('#pages').innerHTML+="<li> Name: "+ fn +' ' + ln +"</li>"+"<p>&nbsp&nbsp&nbsp City :" +ln+"</p>"+ `<img src='${img}' + />`
             
             
          }
