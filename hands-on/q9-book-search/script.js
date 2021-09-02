@@ -8,8 +8,8 @@ window.addEventListener('DOMContentLoaded', async function(){
     // alert('abc')
         for(let s of response.data.docs){
             console.log(s)
-            document.querySelector('#name').innerHTML=`<li>Book Title: ${s.title}</li><li> Edition Count: ${s.edition_count}</li><li> Author Name: ${s.author_name[0]}</li>`
-
+            document.querySelector('#name').innerHTML+=`<li><h5>Book Title: ${s.title}</li></h5><h5> Edition Count: ${s.edition_count}</h5><h5> Author Name: ${s.author_name[0]}</h5>`
+            
         
         }
 
